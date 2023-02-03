@@ -1,5 +1,10 @@
 /* Celestia Wilkey */
-/* Centering and Size */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&family=Poppins:wght@300&display=swap');
+
+/* Font Families */
+/*--heading-font: "Indie Flower";
+  --paragraph-font: "Poppins", Helvetica, sans-serif; */
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -9,6 +14,7 @@ nav a {
     text-align: center;
     color: #eff5fa;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -29,44 +35,102 @@ main section {
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
 #background {
     height: 725px;
+    background-color: white;
 }
 
 #hero-img {
     width: 100%;
 }
 
-/* Background colors */
 body {
     background-color: #eff5fa;
+    font-family: "Poppins", "Helvetica", sans-serif;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
 }
 
 header {
     background-color: #426faf;
 }
 
+.home-title {
+    color: #13283f;
+    font-family: "Indie Flower", sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+h2 {
+    margin: 0;
+}
+
+h4 {
+    color: #13283f;
+}
+
+/* Adding Widths */
+.icon {
+    width: 85px;
+    padding-top: 10px;
+}
+
+.logo {
+    width: 100px;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #e33436;
+}
+
 .book, .join {
     background-color: #c0d5ec;
     color: #346faf;
     text-decoration: none;
+    padding: 15 px 30 px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
     background-color: white;
 }
 
-#background {
-    background-color: ;
-}
-
 .msg {
     background-color: #c0d5ec;
+    line-height: 1.5em;
+    padding: 35px;
+}
+
+.msg h2 {
+    color: #13283f;
+    font-family: "Indie Flower", sans-serif;
+}
+
+.msg p {
+    color: #13283f;
+    padding-bottom: 15px;
 }
 
 footer {
     background-color: #eff5fa;
     color: #13283f;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a {
@@ -86,27 +150,6 @@ footer p a:hover {
     text-decoration: underline;
 }
 
-.home-title {
-    color: #13283f;
-}
-
-h4 {
-    color: #13283f;
-}
-
-.msg h2 {
-    color: #13283f;
-}
-
-.msg p {
-    color: #13283f;
-}
-
-/* Adding Widths */
-.icon {
-    width: 85px;
-}
-
-.logo {
-    width: 100px;
+footer .social img {
+    padding-top: 15px;
 }
