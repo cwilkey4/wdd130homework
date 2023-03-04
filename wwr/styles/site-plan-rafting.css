@@ -8,7 +8,7 @@ Fonts are separated by a & */
   /* change the values below to your colors from your palette */
   --primary-color: #eff5fa  ;
   --secondary-color: #c0d5ec ;
-  --accent1-color: #e33436;
+  --accent1-color: #eb9486;
   --accent2-color: white;
 
   /* change the values below to your chosen font(s) */
@@ -22,7 +22,7 @@ Fonts are separated by a & */
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
   --paragraph-background-color: #346faf  ;
   --nav-link-color: #c0d5ec;
-  --nav-background-color: #e33436;
+  --nav-background-color: #eb9486;
   --nav-hover-link-color: white;
   --nav-hover-background-color: #426faf;
 }
