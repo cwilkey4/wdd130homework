@@ -5,31 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chopper Meals | Home Page</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <div id="hero">        
-        <img src="images/three-optimized.jpg" alt="Three Friends!">
-        <h3 id="call-to-action">Try it!</h3>
+        <img src="images/three-optimized.jpg" alt="Three Friends!" id="hero-image">
+        <a href="site-plan.html">
+            <h3 id="call-to-action">Try it!</h3>
+        </a>
     </div>
     <header>
         <nav>
             <a href="index.html">Home</a>
             <a href="nutrition.html">Why Nutrition?</a>
-            <a id="logo_link" href="index.html">
+            <a id="logo-link" href="index.html">
                 <img class="logo" src="images/choppermeals.png" alt="choppermeals">
             </a>
             <a href="cost.html">What's the Cost?</a>
-            <a href="index" target="blank_">Site Plan/Sign Up!/Recipe/Meal Plan</a> <!-- Might try to add a form into this; this page would lead to it. That, or it can be a sample recipe. -->
+            <a href="index" target="blank_">Sign Up!</a> <!-- Might try to add a form into this; this page would lead to it. That, or it can be a sample recipe. -->
         </nav>
     </header>
 
     <main id="main-grid">
-        <h2>Chopper Meals</h2>
-      
-        <img src="images/davide-optimized.jpg" alt="sample picture">
-        <div id="mini-message">
-            <p>Try out some of our recipes now!</p>
-        </div>
+        <section id="introduction">
+            <h2>Chopper Meals</h2>
+            <div id="paragraphs">
+                <p>Between work, homework, and tuition, mealtime is usually downgraded to whatever is fast and cheap. Convenient? Yes. Unhealthy? Maybe a bit. Boring and repetitive? <i>Absolutely yes.</i> </p>
+                <p>Here, our hope is to encourage students through an online medium to get a little more creative and nutritious with what they eat while working with these limitations.</p>
+                <p>Here you'll find meal plans with simple recipes, a basic dietary education, and a means of getting ingredients and supplies onto your shelves!</p>
+            </div>
+        </section>
+        <section id="invitation">
+            <img src="images/davide-optimized.jpg" alt="sample picture" id="food">
+            <div id="mini-message">
+                <a href="sign-up.html" id="mini">Try out some of our recipes now!</a>
+            </div>
+    </section>
     </main>
     <footer>
         <p>Chopper Meals Copyright &copy;2023 - Celestia Wilkey</p>
