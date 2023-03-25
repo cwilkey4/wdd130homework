@@ -42,6 +42,11 @@ header {
     background-color: #383D3B;
 }
 
+#space {
+    height: 50px;
+    background-color: #944134;
+}
+
 nav {
     display: flex;
     /* background-color: #383D3B; */
@@ -79,7 +84,7 @@ body {
     background-color: #944134;
 }
 
-/* Main Grid */
+/* Page 1: HOME */
 #main-grid {
     display: grid;
     background-color: #944134;
@@ -157,6 +162,7 @@ body {
 
 #mini {
     color: #383D3B;
+    border-radius: 10px;
 }
 
 #mini-message:hover {
@@ -199,4 +205,303 @@ footer a {
     padding-right: 6px;
     border: inset;
     border-radius: 20px;
+}
+
+/* Index: Sign Up */
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+  
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; 
+    border: 1px solid #888;
+    width: 80%; 
+}
+  
+/* The Close Button */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+  
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+  
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Page 2: NUTRITION */
+#nutrition-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#nutrition-intro {
+    grid-column: 1/4;
+    /* display: grid; */
+    /* grid-template-columns: 20px 1fr 1fr 20px; */
+    align-items: center;
+    justify-items: center;
+    align-content: space-evenly;
+    margin: 140px 100px 200px 100px;
+    padding: 30px;
+    background-color: #EEE5E3;
+    border: 15px #232323 solid;
+    border-radius: 17px;
+    justify-self: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+#nutrition-img {
+    max-width: 45%;
+    float: left;
+    padding-left: 20px;
+}
+
+#nutrition-img img {
+    border: 10px #E6CB53 solid;
+    border-radius: 20px;
+}
+
+#nutrition-text {
+    grid-column: 2;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    color: #232323;
+    max-width: 45%;
+    float: left;
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+.intro {
+    width: 50%;
+    float: left;
+    /* display: inline-block;
+    vertical-align: middle; */
+}
+
+#suggestions {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* justify-items: center; */
+    align-items: center;
+}
+
+#myplate {
+    grid-column: 1;
+}
+
+#labels {
+    grid-column: 2;
+}
+
+#shopping {
+    grid-column: 3;
+}
+
+#shopping img {
+    border-radius: 15px;
+}
+
+.info {
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    margin: 30px;
+    background-color: white;
+    padding: 10px 5px 10px 5px;
+    width: 75%;
+    border: 10px #232323 solid;
+    border-radius: 10px;
+    color: #232323;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.info:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+
+/* Page 3: COST */
+#cost-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#offers {
+    grid-column: 1/4;
+    /* display: grid; */
+    /* grid-template-columns: 20px 1fr 1fr 20px; */
+    align-items: center;
+    justify-items: center;
+    align-content: space-evenly;
+}
+
+.offers {
+    margin: 140px 100px 200px 100px;
+    padding: 30px;
+    background-color: #EEE5E3;
+    border: 15px #232323 solid;
+    border-radius: 17px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.offers img {
+    border: 1px #232323 solid;
+}
+
+.offers p, .offers h3, .offers h2 {
+    text-align: center;
+}
+
+.offers h3 {
+    font-size: 24px;
+}
+
+.offers h2 {
+    font-size: 40px;
+    background: linear-gradient(180deg, #04AA6D, #E6CB53);
+    /* -webkit-linear-gradient(#04AA6D, #E6CB53);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    /* color: linear-gradient(180deg, #04AA6D, #E6CB53); */
+}
+
+#offer1 {
+    grid-column: 1;
+    float: left;
+}
+
+#offer2 {
+    grid-column: 2;
+    float: left;
+}
+
+/* Trial */
+#trial {
+    grid-column: 1/4;
+    max-width: 70%;
+    justify-self: center;
+    align-self: center;
+    background-color: #EEE3E5;
+    border-radius: 20px;
+    padding: 5px 0px 20px 0px;
+    border: solid #232323 5px;
+    color: #232323;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+#trial-text h1 {
+    margin-left: 10px;
+}
+
+#button {
+    margin: 0 auto;
+    justify-self: center;
+    align-self: center;
+    max-width: 78%;
+}
+
+#trial-text button {
+    border: inset 5px;
+    border-radius: 18px;
+    color: #cee9d1;
+}
+
+
+
+/* Page 4: SIGN UP */
+form {
+    border: 3px solid #f1f1f1;
+}
+  
+/* , input[type=password] */
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+button {
+    background-color: #04AA6D;
+    color: #EEE3E5;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+  
+button:hover {
+    opacity: 0.8;
+}
+  
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+  
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+  
+img.mail {
+    border-radius: 50%;
+}
+  
+.container {
+    padding: 16px;
+}
+  
+/* Small Screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
 }
