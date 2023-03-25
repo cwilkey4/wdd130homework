@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chopper Meals | Nutrition... Why?</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
+        <div id="space"></div>
         <nav>
             <a href="index.html">Home</a>
             <a href="nutrition.html">Why Nutrition?</a>
@@ -15,38 +17,46 @@
                 <img class="logo" src="images/choppermeals.png" alt="choppermeals">
             </a>
             <a href="cost.html">What's the Cost?</a>
-            <a href="index" target="blank_">Sign Up!</a> <!-- Might try to add a form into this; this page would lead to it. That, or it can be a sample recipe. -->
+            <a href="sign-up.html" target="blank_">Sign Up!</a> <!-- Might try to add a form into this; this page would lead to it. That, or it can be a sample recipe. -->
         </nav>
     </header>
 
     <main id="nutrition-grid">
         <div id="nutrition-intro">
-            <img src="images/caju-optimized (2).jpg" alt="Watermelon Smile">
+            <div id="nutrition-img" class="intro">
+                <img src="images/caju-optimized (2).jpg" alt="Watermelon Smile">
+            </div>
 
-            <div id="nutrition-text">
+            <div id="nutrition-text" class="intro">
                 <h1>Nutrition... Why?</h1>
                 <p>Yeah, this is the boring stuff. Plenty of people get along well enough, especially in their young adult years. However, this time also happens to be a critical to future health. A lot of health problems are tied directly to a person's diet, and even more of those take tons of time to develop. By the time symptoms start to manifest, it's generally difficult to reverse, if possible in the first place. Why not make a few changes now?</p>
             </div>
         </div>
 
         <div id="suggestions">
-            <div id="my-plate">
-                <img src="images/MyPlate_blue_0 (1).jpg" alt="My Plate">
-                <p class="mini-description">Plenty of Americans know about MyPlate, but the vast majority ignore it despite its huge benefits. Take a few seconds to learn about this simple guideline and implement it in your own lifestyle.</p>
-                <!-- <a href="" target="_blank"></a> -->   
-            </div>
+            <a href="#" target="_blank">
+                <div id="my-plate" class="info">
+                        <img src="images/MyPlate_blue_0 (1).jpg" alt="My Plate">
+                    <p class="mini-description">Plenty of Americans know about MyPlate, but the vast majority ignore it despite its huge benefits. Take a few seconds to learn about this simple guideline and implement it in your own lifestyle.</p>
+                    <!-- https://www.myplate.gov/ -->   
+                </div>
+            </a>
 
-            <div id="labels">
-                <img src="images/nutrition-facts-label-download-image2 (1).jpg" alt="Label Example">
-                <p class="mini-description">We see plenty of these in grocery stores, but it can be intimidating to look at. Let's break it up!</p>
-                <!-- <a href="" target="_blank"></a> -->
-            </div>
+            <a href="#" target="_blank">
+                <div id="labels" class="info">
+                    <img src="images/nutrition-facts-label-download-image2 (1).jpg" alt="Label Example">
+                    <p class="mini-description">We see plenty of these in grocery stores, but it can be intimidating to look at. Let's break it up!</p>
+                    <!-- https://www.fda.gov/food/food-labeling-nutrition/changes-nutrition-facts-label -->
+                </div>
+            </a>
 
-            <div id="shopping">
-                <img src="images/pexels-optimized (2).jpg" alt="Yummy Fruits Yay!">
-                <p class="mini-description">Whether you're in the grocery store or in the kitchen, there are plenty of things you can learn about food. Educate yourself bit by bit!</p>
-                <!-- <a href="" target="_blank"></a> -->
-            </div>
+            <a href="#" target="_blank">
+                <div id="shopping" class="info">
+                    <img src="images/pexels-optimized (2).jpg" alt="Yummy Fruits Yay!">
+                    <p class="mini-description">Whether you're in the grocery store or in the kitchen, there are plenty of things you can learn about food. Educate yourself bit by bit!</p>
+                    <!-- <a href="" target="_blank"></a> -->
+                </div>
+            </a>
         </div>
     </main>
     

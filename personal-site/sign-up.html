@@ -5,9 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chopper Meals | Form</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <p>WIP</p>
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="imgcontainer">
+        <img src="images/mail_FILL0_wght400_GRAD0_opsz48.png" alt="mail" class="mail">
+      </div>
+            
+      <div class="container">
+        <label for="firstname"><b>First Name</b></label>
+        <input type="text" placeholder="First Name" name="firstname" required>
+
+        <label for="lastname"><b>Last Name</b></label>
+        <input type="text" placeholder="Last Name" name="lastname" required>
+            
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Email" name="email" required>
+            
+        <button type="submit">Subscribe!</button>
+        <label>
+          <input type="checkbox" name="restrictions"> I have certain dietary restrictions
+        </label>
+      </div>
+            
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+    </form>
+
+
     <!-- Might try to add a form into this; this page would lead to it. That, or it can be a sample recipe/meal plan. -->
+    <!-- THIS FORM NEEDS A SECTION THAT ASKS FOR THE SUBSCRIBER'S PERSONAL PREFERENCES (allergies, time cooking, cost, etc) -->
 </body>
 </html>

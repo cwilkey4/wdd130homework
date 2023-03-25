@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chopper Meals | What's it Cost?</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
+        <div id="space"></div>
         <nav>
             <a href="index.html">Home</a>
             <a href="nutrition.html">Why Nutrition?</a>
@@ -15,35 +17,35 @@
                 <img class="logo" src="images/choppermeals.png" alt="choppermeals">
             </a>
             <a href="cost.html">What's the Cost?</a>
-            <a href="index" target="blank_">Sign Up!</a> <!-- Might try to add a form into this; this page would lead to it. That, or it can be a sample recipe. -->
+            <a href="sign-up.html" target="blank_">Sign Up!</a> <!-- Might try to add a form into this; this page would lead to it. That, or it can be a sample recipe. -->
         </nav>
     </header>
 
     <main id="cost-grid">
         <div id="offers">
-            <div id="offer1">
+            <div id="offer1" class="offers">
                 <img src="images/cooker-king-AOVtEuU9UGc-unsplash (1).jpg" alt="cookware set">
                 <h3>Cookware Set</h3>
                 <ul>
-                    <ol>1-4.25 quart saucepans</ol>
-                    <ol>10-Inch frying pan</ol>
-                    <ol>Kitchen Utensil (Six Piece)</ol>
+                    <li>1-4.25 quart saucepans</li>
+                    <li>10-Inch frying pan</li>
+                    <li>Kitchen Utensil (Six Piece)</li>
                 </ul>
                 <h2>$65.00</h2>
-                <p>Explore more options!</p>  
+                <a href="#" target=""_blank><p><b>Explore more options!</b></p></a>  
             </div>
 
-            <div id="offer2">
+            <div id="offer2" class="offers">
                 <img src="images/tiard-schulz-V5Bqsot6UCg-unsplash (1).jpg" alt="spice bundle">
                 <h3>Starter Spice Bundle (10 Piece)</h3>
                 <ul>
-                    <ol>Paprika</ol>
-                    <ol>Onion Powder</ol>
-                    <ol>Basil</ol> 
-                    <ol>... and more!</ol>
+                    <li>Paprika</li>
+                    <li>Onion Powder</li>
+                    <li>Basil</li> 
+                    <li>... and more!</li>
                 </ul>
                 <h2>$25.00</h2>
-                <p>Explore more options!</p>
+                <a href="#" target=""_blank><p><b>Explore more options!</b></p></a>
             </div>
 
             <!-- <div id="offer3">
@@ -59,11 +61,60 @@
         <div id="trial">
             <div id="trial-text">
                 <h1>Not up for shopping?</h1>
-                <p>That's okay! Get a trial meal plan sent straight to your email -- completely free!</p>
+                <!-- <p>That's okay! Get a trial meal plan sent straight to your email -- completely free!</p> -->
+                <div id="button">
+                    <button onclick="document.getElementById('id01').style.display='block'" id="mini">That's okay! Get a trial meal plan sent straight to your email -- completely free!</button>
+                </div>
             </div>
 
+
+            <!-- Assignment -->
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                          
+                <!-- Modal Content -->
+                <form class="modal-content animate" action="/action_page.php">
+                    <div class="imgcontainer">
+                        <img src="images/mail_FILL0_wght400_GRAD0_opsz48.png" alt="mail" class="mail">
+                    </div>
+                          
+                    <div class="container">
+                        <label for="firstname"><b>First Name</b></label>
+                        <input type="text" placeholder="First Name" name="firstname" required>
+            
+                        <label for="lastname"><b>Last Name</b></label>
+                        <input type="text" placeholder="Last Name" name="lastname" required>
+                          
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Email" name="email" required>
+                          
+                        <button type="submit">Subscribe!</button>
+                        <label>
+                          <input type="checkbox" name="restrictions"> I have certain dietary restrictions
+                        </label>
+                    </div>
+                          
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+
+
+    <footer>
+        <p>Chopper Meals Copyright &copy;2023 - Celestia Wilkey</p>
+        <a href="site-plan.html">Site Plan</a>
+    </footer>
+</body>
+</html>
+
+
+
             <!-- Form -->
-            <form action="/my-handling-form-page" method="post">
+            <!-- <form action="/my-handling-form-page" method="post">
                 <ul>
                     <li>
                         <label for="name">Name</label>
@@ -81,15 +132,4 @@
                         <button type="submit">Sign Up!</button>
                     </li>
                 </ul>
-            </form>
-        </div>
-    </main>
-    
-
-
-    <footer>
-        <p>Chopper Meals Copyright &copy;2023 - Celestia Wilkey</p>
-        <a href="site-plan.html">Site Plan</a>
-    </footer>
-</body>
-</html>
+            </form> -->
