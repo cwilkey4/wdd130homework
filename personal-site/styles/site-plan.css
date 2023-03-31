@@ -11,7 +11,8 @@ Fonts are separated by a | */
   --secondary-color: #EEE5E9 ;
   --accent1-color: #383D3B;
   --accent2-color: #E6CB53;
-  --accent3-color: #E05943;
+    --accent3-color: #04AA6D;
+    /* #E05943 */
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Righteous", "Labrada", sans-serif;
@@ -95,6 +96,10 @@ p {
 }
 .accent2{
   background-color: var(--accent2-color);
+}
+
+.accent3{
+  background-color: var(--accent3-color);
 }
 
 p.colored {
